@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Funnel Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --cor-01: #06C;
+    --cor-02: #000;
+    --cor-03: #CCC;
+    --cor-04: #FFF;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#cabecalho {
+    background-color: var(--cor-02);
+    margin-bottom: 30px;
+}
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu .submenu {
+    background-color: var(--cor-02);
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#menu ul li a {
+    color: var(--cor-04);
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    transition: all .3s linear;
+}
+
+#menu ul li a:hover {
+    background-color: var(--cor-01);
+}
+
+#menu ul li:hover .submenu {
+    display: block;
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#historia > .container img {
+    float: left;
+    width: 350px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#historia p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#fotos #galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    
+}
+
+
+#fotos #galeria img{
+    display: block;
+    width: 100%;
+    transition: all 0.2 linear;
+}
+
+#fotos #galeria img:hover{
+    transform: scale(1.07);
+}
+
+#videos #galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#rodape {
+    background-color: var(--cor-02);
+    color: var(--cor-04);
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+#rodape a {
+    color: var(--cor-04);
+}
+
+#rodape a:hover{
+    text-decoration: underline;
+    color: var(--cor-01);
+}
