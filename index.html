@@ -1,67 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site iPhone</title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clair Obscur - Expedition 33</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
     <script src="plugins/jquery.min.js"></script>
     <script src="plugins/bxslider.min.js"></script>
-    <link rel="stylesheet" href="plugins/bxslider.css">
-    <script src="plugins/script.js"></script>
-    <link rel="shortcut icon" href="images/logo_apple_preto.png" type="image/x-icon">
-</head>
-<body id="pag-index">
+    <link rel="stylesheet" href="plugins/bxslider.css" />
+    <script defer src="js/script.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/93f012ef48.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="pag-index" class="container-flex">
     <header id="cabecalho">
-        <div class="container">
-            <img src="images/logo_apple_branco.png" alt="Logo Apple" id="logo">
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="">Modelos</a>
-                        <ul class="submenu">
-                            <li><a href="">iPhone 16</a></li>
-                            <li><a href="">iPhone 16 Pro</a></li>
-                            <li><a href="">iPhone 15</a></li>
-                            <li><a href="">iPhone 15 Pro</a></li>
-                            <li><a href="">iPhone SE</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="pages/fotos.html">Fotos</a></li>
-                    <li><a href="pages/videos.html">Vídeos</a></li>
-                    <li><a href="https://www.apple.com" target="_blank">Site oficial</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="images/logo-expedition-33.png"
+            alt="Logo Clair Obscur Expedition 33"
+            id="logo"
+          />
+        </a>
+        <nav id="menu">
+          <ul>
+            <li><a href="pages/trailer.html">Trailer</a></li>
+            <li><a href="pages/musicas.html">Músicas</a></li>
+            <li>
+              <a href="pages/personagens.html">Personagens</a>
+              <ul class="submenu">
+                <li><a href="">Gustave</a></li>
+                <li><a href="">Lune</a></li>
+                <li><a href="">Maelle</a></li>
+                <li><a href="">Sciel</a></li>
+              </ul>
+            </li>
+
+            <li><a href="pages/wallpapers.html">Wallpapers</a></li>
+            <li><a href="pages/ambientes.html">Ambientes</a></li>
+            <li>
+              <a href="https://www.expedition33.com/" target="_blank"
+                >Site Oficial</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-    <div id="banners">
-        <div class="container">
-            <ul>
-                <li><img src="images/banners/banner_01.jpg" alt="iPhone 13"></li>
-                <li><img src="images/banners/banner_02.jpg" alt="iPhone 13 Pro"></li>
-                <li><img src="images/banners/banner_03.jpg" alt="iPhone SE"></li>
-            </ul>
-        </div>
+    <div id="container-video">
+      <video id="video-comeco" width="100%" muted autoplay>
+        <source src="videos/menu-clair-obscur.mp4" type="video/mp4" />
+      </video>
     </div>
+    <main class="preencher-pagina">
+      <section id="historia" class="conteudo">
+        <div class="container zoom-box-shadow card">
+          <h2 class="titulo">História</h2>
+          <figure class="gif-explicacao">
+            <img
+              src="images/ambientacao/andando-3-pessoa.gif"
+              alt="Andando em terceira pessoa"
+            />
+            <figcaption>Perspectiva de terceira pessoa.</figcaption>
+          </figure>
 
-    <section id="historia" class="conteudo">
-        <div class="container">
-            <h2 class="titulo">História</h2>
-            <img src="images/iphone.webp" alt="Primeiro iPhone">
-            <p>Anunciado em 9 de janeiro de 2007, o iPhone foi lançado no dia 29 de junho de 2007 nos EUA, em 9 de novembro de 2007 na Alemanha e no Reino Unido, e em 29 de novembro na França, por Steve Jobs ex-presidente e fundador da marca Apple Inc. Em 2008 foi lançado no mercado asiático e resto da Europa. Em Portugal, foi inicialmente vendido pela Vodafone. Foi lançado em 11 de julho de 2008, e até janeiro de 2009 foram vendidos quatro milhões de iPhones. Somente durante o fim de semana de lançamento do iPhone 3G, a Apple afirma ter vendido um milhão de unidades do aparelho. Sendo um dos smartphones mais vendidos do mundo.</p>
+          <p>
+            Clair Obscur: Expedição 33 é um 2025 role-playing jogo de vídeo
+            desenvolvido pelo estúdio francês Sandfall Interactive e publicado
+            pela Kepler Interativo. Ocorrendo em um fantasia sombria Belle
+            Époque no cenário, o jogo segue os voluntários da Expedição 33
+            enquanto eles se propõem a destruir a Pintora, um ser que causa o
+            Gommage anual, que apaga aqueles em ou acima de uma idade cada vez
+            menor.
+          </p>
 
-            <p>No Brasil, a primeira versão do telefone (chamada popularmente de 2G) não foi lançada. Na sua segunda versão, o iPhone 3G, começou a ser vendido no mercado brasileiro, a partir de 26 de setembro de 2008.</p>
+          <p>
+            No jogo, o jogador controla um grupo de personagens de uma
+            perspectiva de terceira pessoa, explorando áreas e se envolvendo em
+            combate. Juntamente com a sua mecânica baseada em turnos são
+            aspectos em tempo real, tais como eventos de tempo rápido e ações
+            cronometradas em combate.
+          </p>
 
-            <p>O iPhone é uma das duas maiores plataformas de smartphones do mundo ao lado do Android. A linha de smartphones foi responsável por gerar grandes lucros para a Apple, tornando-se uma das empresas de capital aberto mais valiosas do mundo. O iPhone de primeira geração foi descrito como uma revolução para a indústria de telefonia móvel e seus modelos posteriores também receberam elogios. A linha de celulares foi responsável pela popularização dos smartphones e do desenvolvimento e comercialização de aplicativos móveis.</p>
+          <p></p>
         </div>
-    </section>
-    
+      </section>
+      <section id="jogabilidade" class="conteudo">
+        <div class="container zoom-box-shadow card">
+          <h2 class="titulo">Jogabilidade</h2>
+          <figure class="gif-explicacao">
+            <img
+              src="images/ataque/ataque-clair-obscur-expedition-33.gif"
+              alt="Imagem mostrando o Uso de Habilidade para o ataque"
+            />
+            <figcaption>Uso de Habilidade para o ataque</figcaption>
+          </figure>
+          <p>
+            Clair Obscur: Expedição 33 é um terceira pessoa role-playing game
+            baseado em turnos com em tempo real elementos. O jogador controla um
+            grupo de Expedicionários explorando um mundo de fantasia. Em seus
+            turnos, os jogadores selecionam se querem usar um item, realizar um
+            ataque corpo a corpo para ganhar Pontos de Habilidade, ou gastar
+            Pontos de Habilidade acumulados para usar ataques à distância ou
+            Habilidades. Ataques à distância são apontados livremente,
+            semelhante a um atirador em terceira pessoa.
+          </p>
+        </div>
+      </section>
+    </main>
     <footer id="rodape">
-        <span>
-            Site desenvolvido na disciplina de Introdução à Tecnologia Web do 1º período do curso de Sistema de Informação do UniRios - Paulo Afonso/BA<br>
-            Edemilton Junior - <a href="https://www.instagram.com/edemiltonjr" target="_blank">@edemiltonjr</a>
-        </span>
+      <span>
+        Site desenvolvido na disciplina de Introdução à Tecnologia Web do 1º
+        período do curso de Sistema de Informação do UniRios - Paulo
+        Afonso/BA<br />
+        Lucas Teixeira -
+        <a href="https://github.com/luccasts" target="_blank"
+          ><i class="fa fa-github-square" aria-hidden="true"></i>Github</a
+        >
+        <a href="https://www.linkedin.com/in/lucastsilva-dev/" target="_blank"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a
+        >
+      </span>
     </footer>
-</body>
+  </body>
 </html>

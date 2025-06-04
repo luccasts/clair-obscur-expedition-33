@@ -1,0 +1,10 @@
+@media screen and (max-width: 1078px) {
+  .zoom-box-shadow:hover {
+    transform: scale(1) !important;
+  }
+  #musicas #galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
