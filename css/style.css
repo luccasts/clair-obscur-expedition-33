@@ -17,6 +17,23 @@
   --cor-07: #1c1c1c;
   --cor-08: #c9a780;
   --cor-10: #000000bd;
+  /*Lune Habilidades*/
+  --cor-gelo: #a5f2f3;
+  --cor-fogo: #ff2800;
+  --cor-relampago: #ecbf2a;
+  --cor-terra: #4da865;
+  --cor-luz: #fff;
+  /*Maelle Posturas*/
+  --cor-sem-postura: #ccc;
+  --cor-postura-defensiva: #06c;
+  --cor-postura-ofensiva: #ff2800;
+  --cor-postura-virtuosa: #da0bb0;
+  /*Sciel Cores*/
+  --cor-habilidades-sol: #dd9a09;
+  --cor-habilidades-lua: #cad4ff;
+  --cor-pressagios: #8f6710;
+  --cor-habilidade-crepusculo: #312489;
+  --cor-habilidade-pressagio: #5c155c;
   --max-width: 1000px;
   --min-height: 1200px;
 }
@@ -24,6 +41,7 @@ body {
   background-color: var(--cor-05);
   color: var(--cor-06);
 }
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -161,28 +179,6 @@ body {
 #jogabilidade {
   padding-bottom: 5rem;
 }
-/*Aba Fotos*/
-#fotos #galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
-}
-
-#fotos #galeria img {
-  display: block;
-  width: 100%;
-  transition: all 0.2 linear;
-}
-
-#fotos #galeria img:hover {
-  transform: scale(1.07);
-}
-
-#musicas #galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
 
 #rodape {
   background-color: var(--cor-02);
@@ -206,13 +202,16 @@ body {
 
 /*Começo da página Trailers*/
 #container-trailer {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 32px;
+  height: 100%;
 }
 #container-trailer iframe {
   margin: auto;
   border-radius: 1rem;
+  max-height: 500px;
+  height: 500px;
 }
 iframe.zoom-box-shadow {
   background-color: transparent;
@@ -231,6 +230,11 @@ iframe.zoom-box-shadow {
 #musicas-titulo {
   border-bottom: 1px solid var(--cor-08);
 }
+#pag-musicas #galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
 
 /*Fim da página Músicas */
 
@@ -241,8 +245,8 @@ iframe.zoom-box-shadow {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  backdrop-filter: blur(2px) brightness(50%);
-  -webkit-backdrop-filter: blur(2px) brightness(50%);
+  backdrop-filter: blur(2px) brightness(10%);
+  -webkit-backdrop-filter: blur(2px) brightness(10%);
 }
 
 #personagens-titulo {
@@ -279,4 +283,146 @@ iframe.zoom-box-shadow {
   transition: all 1s ease-in-out;
   transform: scale(1.06);
   filter: brightness(100%);
+}
+
+/*Parte Wallpapers*/
+/*Aba Fotos*/
+#pag-wallpapers #fotos #galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+#pag-wallpapers #fotos #galeria img {
+  display: block;
+  width: 100%;
+  transition: all 0.2 linear;
+}
+
+#pag-wallpapers #fotos #galeria img:hover {
+  transform: scale(1.07);
+}
+
+/*Fim das fotos*/
+
+/*Inicio da página Modelo para os Personagens*/
+#atributo-personagem {
+  display: flex;
+  gap: 32px;
+}
+.modelo-pag-personagem span {
+  font-weight: bold;
+}
+#conteiner-lista-atributos {
+  margin: 0 2rem 1rem 2rem;
+}
+.modelo-pag-personagem img {
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.4s;
+}
+#container-img-sobrepor {
+  max-height: 450px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 32px;
+}
+
+#habilidades-personagens {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.modelo-pag-personagem #habilidades-personagens img {
+  width: 100%;
+  max-width: 900px;
+
+  border-radius: 4px;
+  box-shadow: 1px 1px 20px var(--cor-10);
+}
+.conter-zoom {
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+.modelo-pag-personagem img:hover {
+  transform: scale(1.03);
+}
+
+/*Pagina personagem Lune*/
+span.gelo {
+  color: var(--cor-gelo);
+}
+span.fogo {
+  color: var(--cor-fogo);
+}
+span.relampago {
+  color: var(--cor-relampago);
+}
+span.terra {
+  color: var(--cor-terra);
+}
+
+span.luz {
+  color: var(--cor-luz);
+}
+/*Página Maelle*/
+#pag-personagens-maelle ul#postura-lista {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+#pag-personagens-maelle #postura-lista li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#pag-personagens-maelle.modelo-pag-personagem #postura-lista img {
+  width: 36px;
+  box-shadow: none;
+}
+
+#pag-personagens-maelle #postura-lista p {
+  flex-grow: 2;
+}
+
+span.sem-postura {
+  color: var(--cor-sem-postura);
+}
+
+span.postura-defensiva {
+  color: var(--cor-postura-defensiva);
+}
+
+span.postura-ofensiva {
+  color: var(--cor-postura-ofensiva);
+}
+span.postura-virtuosa {
+  color: var(--cor-postura-virtuosa);
+}
+
+/*Página Sciel*/
+
+span.habilidades-pressagio {
+  color: var(--cor-habilidade-pressagio);
+}
+span.habilidades-crepusculo {
+  color: var(--cor-habilidade-crepusculo);
+}
+span.habilidades-sol {
+  color: var(--cor-habilidades-sol);
+}
+span.habilidades-lua {
+  color: var(--cor-habilidades-lua);
+}
+#pag-personagens-sciel #lista-habilidades-sciel ul {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#pag-personagens-sciel
+  #lista-habilidades-sciel
+  #segunda-lista-habilidades-sciel {
+  margin: 0 1rem;
 }
