@@ -1,4 +1,10 @@
 @media screen and (max-width: 1078px) {
+  /*pag-index*/
+  #logo {
+    width: 60px !important;
+    margin: 30px;
+  }
+  /*cursor*/
   ::-webkit-scrollbar {
     height: 10px;
     width: 10px;
@@ -15,7 +21,7 @@
   #menu {
     overflow-x: scroll;
   }
-
+  /*Diminuir o zoom dos personagens*/
   .modelo-pag-personagem img:hover {
     transform: scale(1.005);
   }
@@ -23,11 +29,13 @@
   .zoom-box-shadow:hover {
     transform: scale(1) !important;
   }
+  /*Diminuir os Grids das musicas*/
   #pag-musicas #galeria {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
   }
+  /*Pag wallpaeprs*/
   #pag-wallpapers #fotos #galeria {
     grid-template-columns: 1fr 1fr;
     margin: 1rem;
@@ -35,9 +43,28 @@
   #pag-wallpapers #fotos #galeria img:hover {
     transform: scale(1.02);
   }
+
+  /*Lugares*/
+  #container-lugares {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
 
 @media screen and (max-width: 650px) {
+  /*pag-index*/
+  #botao-volume {
+    width: 100%;
+  }
+  #botao-volume:hover #volume {
+    width: 100%;
+  }
+  .container-conteudo-pag-index {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   #pag-wallpapers #fotos #galeria {
     grid-template-columns: 1fr;
     align-items: center;

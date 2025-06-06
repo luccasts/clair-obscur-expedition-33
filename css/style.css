@@ -41,7 +41,7 @@ body {
   background-color: var(--cor-05);
   color: var(--cor-06);
 }
-
+/*Classes Globais*/
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -61,7 +61,7 @@ body {
   flex-shrink: 1;
   flex-basis: 0;
 }
-
+/*Começo do Header*/
 #cabecalho {
   position: sticky;
   top: 0;
@@ -77,7 +77,7 @@ body {
 }
 
 #cabecalho #logo {
-  width: 30px;
+  width: 42px;
 }
 
 #menu ul {
@@ -118,10 +118,46 @@ body {
   display: block;
 }
 /*Termino do MENU*/
+/*Começo Botão Som*/
+#botao-volume {
+  display: flex;
+  padding: 22px;
+  margin: auto;
+}
 
+#botao-volume button {
+  border: none;
+  background-color: transparent;
+  font-size: 28px;
+}
+#mute > i {
+  color: white;
+}
+#volume {
+  display: none;
+}
+#botao-volume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bbbbbb01;
+  width: 150px;
+}
+#botao-volume:hover #volume {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  width: 150px;
+}
+/*Fim Botão Som*/
 /*Começo do Body do projeto*/
+
+#pag-index main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .card {
-  max-height: 500px;
   height: 100%;
   width: 100%;
 }
@@ -150,31 +186,44 @@ body {
   margin-bottom: 30px;
   color: var(--cor-08);
 }
+.container-conteudo-pag-index {
+  display: flex;
+}
+.container-paragrafo-pag-index {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.container-paragrafo-pag-index p {
+  max-width: 600px;
+}
+#jogabilidade-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .gif-explicacao {
-  float: left;
   width: 350px;
 
   margin-right: 20px;
   margin-bottom: 20px;
 }
-.gif-explicacao > img {
+.gif-explicacao a > img {
   margin-bottom: 4px;
   max-width: 350px;
   width: 100%;
   border-radius: 32px;
   transition: transform 0.4s;
 }
-.gif-explicacao > img:hover {
-  transform: scale(1.1);
+.gif-explicacao a > img:hover {
+  transform: scale(1.05);
 }
 #historia {
   margin-top: 3rem;
 }
 #historia p,
 #jogabilidade p {
-  margin-bottom: 15px;
   text-align: justify;
-  padding-bottom: 54px;
 }
 #jogabilidade {
   padding-bottom: 5rem;
@@ -285,25 +334,14 @@ iframe.zoom-box-shadow {
   filter: brightness(100%);
 }
 
-/*Parte Wallpapers*/
-/*Aba Fotos*/
-#pag-wallpapers #fotos #galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+#pag-personagens a.sublinha-subtitulo {
+  text-decoration: none;
 }
 
-#pag-wallpapers #fotos #galeria img {
-  display: block;
-  width: 100%;
-  transition: all 0.2 linear;
+#pag-personagens #personagens .zoom-box-shadow a.sublinha-subtitulo:hover {
+  text-decoration: underline;
+  color: var(--cor-08);
 }
-
-#pag-wallpapers #fotos #galeria img:hover {
-  transform: scale(1.07);
-}
-
-/*Fim das fotos*/
 
 /*Inicio da página Modelo para os Personagens*/
 #atributo-personagem {
@@ -425,4 +463,69 @@ span.habilidades-lua {
   #lista-habilidades-sciel
   #segunda-lista-habilidades-sciel {
   margin: 0 1rem;
+}
+
+/* Inicio Parte Wallpapers*/
+
+#pag-wallpapers #fotos #galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+#pag-wallpapers #fotos #galeria img {
+  display: block;
+  width: 100%;
+  transition: all 0.2 linear;
+}
+
+#pag-wallpapers #fotos #galeria img:hover {
+  transform: scale(1.07);
+}
+
+/*Fim das Wallpapers*/
+/*Inicio Lugares*/
+#pag-lugares .conter-zoom {
+  max-height: 400px;
+  max-width: 400px;
+  margin: auto;
+}
+#pag-lugares .zoom-box-shadow {
+  text-align: justify;
+}
+#pag-lugares .zoom-box-shadow p {
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+}
+.container-lugares {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container-lugares a {
+  color: var(--cor-08);
+  text-decoration: none;
+}
+.container-lugares a:hover {
+  text-decoration: underline;
+}
+
+#pag-lugares .conter-zoom img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+#pag-lugares .conter-zoom img:hover {
+  transform: scale(1.1);
+}
+#container-lugares {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+#pag-lugares .zoom-box-shadow {
+  padding: 1rem;
 }

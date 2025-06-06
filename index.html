@@ -4,18 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clair Obscur - Expedition 33</title>
+    <!--Css-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media-query.css" />
+    <!-- Plugins -->
     <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/magnific-popup.js"></script>
+    <link rel="stylesheet" href="plugins/magnific-popup.css" />
     <script src="plugins/bxslider.min.js"></script>
     <link rel="stylesheet" href="plugins/bxslider.css" />
+    <!--JS-->
     <script defer src="js/script.js"></script>
+    <!--Iconé da página-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!--Link dos ícones do github/linkeadin-->
     <script
       src="https://kit.fontawesome.com/93f012ef48.js"
       crossorigin="anonymous"
     ></script>
+    <meta
+      name="description"
+      content="Explore Clair Obscur: Expedição 33, um RPG sombrio e estilizado com combate estratégico e história imersiva."
+    />
   </head>
+
   <body id="pag-index" class="container-flex">
     <header id="cabecalho">
       <div class="container">
@@ -33,15 +45,15 @@
             <li>
               <a href="pages/personagens.html">Personagens</a>
               <ul class="submenu">
-                <li><a href="">Gustave</a></li>
-                <li><a href="">Lune</a></li>
-                <li><a href="">Maelle</a></li>
-                <li><a href="">Sciel</a></li>
+                <li><a href="pages/personagens/gustave.html">Gustave</a></li>
+                <li><a href="pages/personagens/lune.html">Lune</a></li>
+                <li><a href="pages/personagens/maelle.html">Maelle</a></li>
+                <li><a href="pages/personagens/sciel.html">Sciel</a></li>
               </ul>
             </li>
 
             <li><a href="pages/wallpapers.html">Wallpapers</a></li>
-            <li><a href="pages/ambientes.html">Ambientes</a></li>
+            <li><a href="pages/lugares.html">Lugares</a></li>
             <li>
               <a href="https://www.expedition33.com/" target="_blank"
                 >Site Oficial</a
@@ -53,64 +65,184 @@
     </header>
     <div id="container-video">
       <video id="video-comeco" width="100%" muted autoplay>
-        <source src="videos/menu-clair-obscur.mp4" type="video/mp4" />
+        <source src="videos/pag-index/menu-clair-obscur.mp4" type="video/mp4" />
       </video>
     </div>
+    <!--Botao do video-->
+    <div id="botao-volume">
+      <button id="mute">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+    </div>
+    <!--Fim Botao do video-->
     <main class="preencher-pagina">
       <section id="historia">
         <div class="container zoom-box-shadow card">
           <h2 class="titulo">História</h2>
-          <figure class="gif-explicacao">
-            <img
-              src="images/ambientacao/andando-3-pessoa.gif"
-              alt="Andando em terceira pessoa"
-            />
-            <figcaption>Perspectiva de terceira pessoa.</figcaption>
-          </figure>
+          <div class="container-conteudo-pag-index">
+            <figure class="gif-explicacao magnificPopup">
+              <a href="images/historia/mundo-expedition-33.gif">
+                <img
+                  src="images/historia/mundo-expedition-33.gif"
+                  alt="Andando em terceira pessoa"
+                />
+              </a>
+              <figcaption>O fantástico mundo Clair Obscur</figcaption>
+            </figure>
+            <div class="container-paragrafo-pag-index">
+              <p>
+                <strong>Clair Obscur: Expedição 33</strong> é um jogo de RPG
+                lançado em 2025, desenvolvido pelo estúdio francês
+                <em>Sandfall Interactive</em> e publicado pela
+                <em>Kepler Interactive</em>. A história se passa em um universo
+                de fantasia sombria inspirado na Belle Époque. Nessa ambientação
+                única, acompanhamos os voluntários da Expedição 33 em sua missão
+                para derrotar a Pintora — uma entidade responsável pelo chamado
+                <strong>Gommage</strong>, um fenômeno anual que apaga da
+                existência todos que atingem ou ultrapassam uma certa idade,
+                cada vez mais reduzida.
+              </p>
 
-          <p>
-            Clair Obscur: Expedição 33 é um 2025 role-playing jogo de vídeo
-            desenvolvido pelo estúdio francês Sandfall Interactive e publicado
-            pela Kepler Interativo. Ocorrendo em um fantasia sombria Belle
-            Époque no cenário, o jogo segue os voluntários da Expedição 33
-            enquanto eles se propõem a destruir a Pintora, um ser que causa o
-            Gommage anual, que apaga aqueles em ou acima de uma idade cada vez
-            menor.
-          </p>
-
-          <p>
-            No jogo, o jogador controla um grupo de personagens de uma
-            perspectiva de terceira pessoa, explorando áreas e se envolvendo em
-            combate. Juntamente com a sua mecânica baseada em turnos são
-            aspectos em tempo real, tais como eventos de tempo rápido e ações
-            cronometradas em combate.
-          </p>
-
-          <p></p>
+              <p>
+                No jogo, o jogador assume o controle de um grupo de personagens
+                em perspectiva de terceira pessoa, explorando cenários diversos
+                e enfrentando inimigos. A mecânica de combate combina o estilo
+                tradicional de turnos com elementos em tempo real, como eventos
+                de tempo rápido e ações cronometradas que aumentam a imersão
+                durante os confrontos.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="jogabilidade">
-        <div class="container zoom-box-shadow card">
+        <div class="container zoom-box-shadow card" id="jogabilidade-flex">
           <h2 class="titulo">Jogabilidade</h2>
-          <figure class="gif-explicacao">
-            <img
-              src="images/ataque/ataque-clair-obscur-expedition-33.gif"
-              alt="Imagem mostrando o Uso de Habilidade para o ataque"
-            />
-            <figcaption>Uso de Habilidade para o ataque</figcaption>
-          </figure>
-          <p>
-            Clair Obscur: Expedição 33 é um terceira pessoa role-playing game
-            baseado em turnos com em tempo real elementos. O jogador controla um
-            grupo de Expedicionários explorando um mundo de fantasia. Em seus
-            turnos, os jogadores selecionam se querem usar um item, realizar um
-            ataque corpo a corpo para ganhar Pontos de Habilidade, ou gastar
-            Pontos de Habilidade acumulados para usar ataques à distância ou
-            Habilidades. Ataques à distância são apontados livremente,
-            semelhante a um atirador em terceira pessoa.
-          </p>
+          <div id="combate">
+            <h3 class="subtitulo">Combate</h3>
+            <section class="container-conteudo-pag-index">
+              <figure class="gif-explicacao magnificPopup">
+                <a href="images/jogabilidade/menu-combate.png">
+                  <img
+                    class="img-maior-pag-index"
+                    src="images/jogabilidade/menu-combate.png"
+                    alt="Imagem do Menu de combate"
+                  />
+                </a>
+                <figcaption>Menus de Opções durante o combate</figcaption>
+              </figure>
+              <div class="container-paragrafo-pag-index">
+                <p>
+                  Durante o combate podemos escolher entre Itens, é um RPG em
+                  terceira pessoa com sistema de combate por turnos que
+                  incorpora elementos em tempo real. O jogador comanda um grupo
+                  de Expedicionários enquanto explora um mundo de fantasia
+                  repleto de perigos e mistérios.
+                </p>
+
+                <p>
+                  Durante os combates, é possível escolher entre usar itens,
+                  realizar ataques corpo a corpo (que acumulam Pontos de
+                  Habilidade) ou gastar esses pontos em ataques à distância e
+                  Habilidades especiais. Os ataques à distância são direcionados
+                  livremente, oferecendo uma experiência semelhante à de jogos
+                  de tiro em terceira pessoa.
+                </p>
+                <p>
+                  Por se tratar de um jogo baseado em turnos, durante o turno do
+                  inimigo o jogador pode reagir aos ataques <b>Aparando</b>,
+                  <b>Esquivando</b> ou <b>Pulando</b> — de acordo com o tipo de
+                  golpe recebido.
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <section id="aparar">
+            <h3 class="subtitulo">Aparar</h3>
+            <div class="container-conteudo-pag-index">
+              <figure class="gif-explicacao magnificPopup">
+                <a href="images/jogabilidade/aparar-gif.gif">
+                  <img
+                    class="img-maior-pag-index"
+                    src="images/jogabilidade/aparar-gif.gif"
+                    alt="Imagem mostrando o Uso de Habilidade para o ataque"
+                  />
+                </a>
+                <figcaption>Mecânica de Aparar</figcaption>
+              </figure>
+              <div class="container-paragrafo-pag-index">
+                <p>
+                  O parry em Clair Obscur: Expedition 33 é extremamente
+                  poderoso, pois concede +1 Ponto de Ação (AP) e pode até causar
+                  dano de contra-ataque quando executado com o tempo correto.
+                </p>
+                <p>
+                  AP (Ponto de Ação) é um recurso acumulado durante o combate.
+                  Ele pode ser usado para executar ataques especiais,
+                  habilidades e outras ações avançadas. Em Expedition 33,
+                  realizar um Aparar com sucesso concede +1 AP, permitindo ao
+                  jogador ampliar suas opções estratégicas no turno seguinte.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--Fim da Section Aparar-->
+          <section id="esquivar">
+            <h3 class="subtitulo">Esquivar</h3>
+            <div class="container-conteudo-pag-index">
+              <figure class="gif-explicacao magnificPopup">
+                <a href="images/jogabilidade/esquivar-gif.gif">
+                  <img
+                    class="img-maior-pag-index"
+                    src="images/jogabilidade/esquivar-gif.gif"
+                    alt="Imagem mostrando a Mecânica de Esquivar"
+                  />
+                </a>
+                <figcaption>Mecânica de Esquivar</figcaption>
+              </figure>
+              <div class="container-paragrafo-pag-index">
+                <p>
+                  O <b>Aparar</b> é mais recompensador do que a esquiva, mas
+                  também exige muito mais precisão no tempo de execução.
+                  <b>Esquivar</b> é bem mais fácil e permite evitar os ataques
+                  inimigos sem receber dano. No entanto, as esquivas não
+                  concedem AP nem oferecem benefícios extras.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--Fim da Section Desviar-->
+          <section id="pular">
+            <h3 class="subtitulo">Pular</h3>
+            <div class="container-conteudo-pag-index">
+              <figure class="gif-explicacao magnificPopup">
+                <a href="images/jogabilidade/pular-gif.gif">
+                  <img
+                    class="img-maior-pag-index"
+                    src="images/jogabilidade/pular-gif.gif"
+                    alt="Imagem mostrando a Mecânica de Pular"
+                  />
+                </a>
+                <figcaption>Mecânica de Pular</figcaption>
+              </figure>
+              <div class="container-paragrafo-pag-index">
+                <p>
+                  Ao contrário do <b>Aparar</b> e da <b>Esquiva</b>, que podem
+                  ser usados de forma intercambiável, o salto funciona de
+                  maneira totalmente diferente. Certos ataques inimigos só podem
+                  ser evitados pulando no ar. Esses ataques são sinalizados com
+                  um ícone especial que avisa o jogador de que é necessário
+                  saltar.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
+        <!--Fim do background do zoom-box-shadow-->
       </section>
+      <!--Fim da section Jogabilidade-->
     </main>
     <footer id="rodape">
       <span>
