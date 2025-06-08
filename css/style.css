@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: "Funnel Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Cinzel", serif;
 }
 
 :root {
@@ -230,7 +237,7 @@ body {
 }
 
 #rodape {
-  background-color: var(--cor-02);
+  background-color: var(--cor-10);
   color: var(--cor-04);
   padding: 30px;
   text-align: center;
@@ -246,6 +253,10 @@ body {
 #rodape a:hover {
   text-decoration: underline;
   color: var(--cor-08);
+}
+#rodape span {
+  font-weight: 400;
+  font-size: 10px;
 }
 /*Fim da página Index*/
 

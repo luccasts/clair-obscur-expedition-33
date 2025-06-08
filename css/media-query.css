@@ -1,5 +1,6 @@
 @media screen and (max-width: 1078px) {
   /*pag-index*/
+
   #logo {
     width: 60px !important;
     margin: 30px;
@@ -53,6 +54,25 @@
 }
 
 @media screen and (max-width: 650px) {
+  #menu .submenu {
+    position: relative;
+    top: 0;
+  }
+  #menu ul li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* #menu .submenu ul {
+    width: 100%;
+  }
+  #menu .submenu li {
+    width: 100%;
+  }
+  #menu .submenu a {
+    width: 100%;
+  } */
   /*pag-index*/
   #botao-volume {
     width: 100%;
