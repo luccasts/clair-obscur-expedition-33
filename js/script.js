@@ -69,8 +69,6 @@ if (video) {
   });
 
   botaoMutar.addEventListener("click", () => {
-    console.log("mute");
-    console.log(video.muted);
     video.muted = !video.muted;
     const icon = botaoMutar.querySelector("i");
 
